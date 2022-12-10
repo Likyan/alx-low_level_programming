@@ -2,19 +2,13 @@
 /**
  * main - entry point
  * Return: alway returns 0
-*/
+ */
 int main(void)
 {
-	char a;
+	int a = 0;
 
-	for (a = 'a' ; a <= 'z' ; a++)
-	{
-		if (a == 'q' || a == 'e')
-		{
-			continue;
-		}
-		putchar(a);
-	}
+	for (; a < 10 ; a++)
+		putchar('0' + a);
 	putchar('\n');
 	return (0);
 }
